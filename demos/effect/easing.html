@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="../../themes/base/jquery.ui.all.css">
 	<script src="../../jquery-1.5.1.js"></script>
 	<script src="../../ui/jquery.effects.core.js"></script>
-	<link rel="stylesheet" href="../demos.css">
-	<style>
+	<link rel="stylesheet" href="../demos.css"><style>
 	.graph {
 		float: left;
 		margin-left: 10px;
@@ -80,9 +79,9 @@
 			ctx.stroke();
 			graph.click(function() {
 				wrap
-					.animate( { height: "hide" }, 2000, name )
+					.animate( { "margin-top": "200" }, 2000, name )
 					.delay( 800 )
-					.animate( { height: "show" }, 2000, name );
+					.animate( { "margin-top": "0" }, 2000, name );
 			});
 
 			graph.width( width ).height( height + text.height() + 10 );
@@ -106,3 +105,4 @@
 
 </body>
 </html>
+
